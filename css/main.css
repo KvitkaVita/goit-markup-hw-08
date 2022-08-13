@@ -206,7 +206,6 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -414,8 +413,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .backdrop {
@@ -742,20 +747,43 @@ textarea::placeholder {
 }
 
 .features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .features__container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 .features__items {
-  width: 270px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 46%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__items {
+    text-align: left;
+  }
 }
 .features__item {
   font-weight: 700;
@@ -764,6 +792,17 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    text-align: left;
+  }
 }
 .features__descr {
   font-size: 14px;
@@ -782,7 +821,6 @@ textarea::placeholder {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -978,11 +1016,6 @@ textarea::placeholder {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .products__thumb {
