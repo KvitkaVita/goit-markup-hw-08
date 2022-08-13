@@ -754,6 +754,8 @@ textarea::placeholder {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -775,14 +777,12 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) {
   .features__items {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 46%;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__items {
-    text-align: left;
+    max-width: 270px;
   }
 }
 .features__item {

@@ -4,7 +4,7 @@
 
     @media screen and (min-width: 768px) {
       display: inline-flex;
-      
+      flex-wrap: wrap;
     }
 
     @media screen and (min-width: 1200px) {
@@ -24,12 +24,11 @@
     width: 100%;
 
     @media screen and (min-width: 768px) {
-      flex-wrap: wrap;
       width: 46%;
     }
-
+    
     @media screen and (min-width: 1200px) {
-      text-align: left;
+      max-width: 270px;
     }
 
   }
