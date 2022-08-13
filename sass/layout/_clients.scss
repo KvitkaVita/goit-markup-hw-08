@@ -1,0 +1,40 @@
+.clients {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  
+  .clients__icon {
+    fill: var(--grey-icon-color);
+  
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .clients__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--grey-icon-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-bgc);
+  
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-icon-color);
+  }
+  
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: var(--accent-icon-color);
+  }
+}
+  

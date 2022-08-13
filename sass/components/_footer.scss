@@ -1,0 +1,112 @@
+.bottom {
+    background-color: var(--additional-bgc);
+    color: var(--white-txt-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+.bottom-container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .contact-info {
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .contact-info-place {
+    margin-bottom: 9px;
+  }
+  
+  .list.bottom-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  
+  .bottom-contacts {
+  &__item {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__item:hover,
+  &__item:focus {
+    color: var(--accent-color);
+  }
+}
+  
+  .bottom-invitation {
+    margin-left: 70px;
+    justify-content: baseline;
+  }
+  
+  .bottom-invitation__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-txt-color);
+    margin-bottom: 20px;
+  }
+  
+  .bottom-socials {
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__icon {
+    fill: var(--white-icon-color);
+  }
+  
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+  }
+}
+  
+  .bottom-invitation__email {
+  display: flex;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .bottom-invitation__form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: baseline;
+  }
+
+  
+  

@@ -1,0 +1,40 @@
+.header {
+    border-bottom: 1px solid #ececec;
+  }
+  .list.header-container {
+    gap: 50px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  
+  &__nav {
+    margin-right: auto;
+  }
+ 
+  &--contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--grey-txt-color);
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &--contacts:hover,
+  &--contacts:focus {
+    color: var(--accent-color);
+  }
+  
+  &--icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+}
