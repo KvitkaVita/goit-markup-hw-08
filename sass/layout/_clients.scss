@@ -1,5 +1,6 @@
 .clients {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
     padding: 0px;
@@ -14,7 +15,7 @@
   }
 
   .clients__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--grey-icon-color);
     border-radius: 4px;
@@ -27,6 +28,14 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+
   &:hover,
   &:focus {
     border: 1px solid var(--accent-icon-color);
