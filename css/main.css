@@ -760,6 +760,33 @@ textarea::placeholder {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  fill: black;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-btn {
+    display: none;
+  }
+}
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--accent-icon-color);
+}
+
+.menu-btn--close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .menu-overlay {
@@ -768,6 +795,23 @@ textarea::placeholder {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 100;
+  background-color: transparent;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .menu-overlay {
+    display: none;
+  }
+}
+.menu-overlay.is-open {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
 }
 
 .menu-container {
@@ -780,11 +824,20 @@ textarea::placeholder {
           flex-direction: column;
   max-width: 480px;
   height: 100%;
-  margin-left: auto;
   background-color: var(--main-bgc);
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-overlay.is-open .menu-container {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mobile-list {
@@ -807,6 +860,9 @@ textarea::placeholder {
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: var(--dark-txt-color);
+}
+.mobile-list__link--top:hover, .mobile-list__link--top:focus {
+  color: var(--accent-txt-color);
 }
 
 .mobile-socials {
@@ -873,7 +929,7 @@ textarea::placeholder {
 .header-container__nav {
   margin-right: auto;
 }
-.header-container--contacts {
+.header-container__contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -889,10 +945,17 @@ textarea::placeholder {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-container__contacts {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    padding-top: 21px;
+  }
+}
 .header-container--contacts:hover, .header-container--contacts:focus {
   color: var(--accent-color);
 }
-.header-container--icon {
+.header-container__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -903,7 +966,21 @@ textarea::placeholder {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+
 .site-nav {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -916,6 +993,11 @@ textarea::placeholder {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 767px) {
+  .site-nav {
+    visibility: hidden;
+  }
 }
 .site-nav__link {
   padding-top: 32px;

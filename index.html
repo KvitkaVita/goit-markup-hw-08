@@ -31,20 +31,20 @@
             <li class="site-nav__item"><a class="site-nav site-nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
-<button class="menu-btn" type="button">
+<button class="menu-btn" type="button" data-menu-open>
   <svg width="40" height="40">
     <use href="./images/icons.svg#mobile-menu"></use>
   </svg>
 </button>
 
-        <ul class="list header-container header-container-hidden">
+        <ul class="list header-container header-contacts-tablet header-container-hidden">
           <li>
-            <a class="header-container--contacts" href="mailto:info@devstudio.com"
-        ><svg class="header-container--icon" width="16" height="12"><use href="./images/icons.svg#envelope"></use>
+            <a class="header-container__contacts" href="mailto:info@devstudio.com"
+        ><svg class="header-container__icon" width="16" height="12"><use href="./images/icons.svg#envelope"></use>
         </svg> info@devstudio.com</a
             >
           </li>
-          <li><a class="header-container--contacts" href="tel:+380961111111"> <svg class="header-container--icon" width="10" height="16">
+          <li><a class="header-container__contacts" href="tel:+380961111111"> <svg class="header-container--icon" width="10" height="16">
             <use href="./images/icons.svg#smartphone"></use>
           </svg> +38 096 111 11 11</a></li>
         </ul>
@@ -499,8 +499,13 @@
 </div> --> 
 
 <!-- Mobile Menu -->
-<div class="menu-overlay">
+<div class="menu-overlay is-open" data-menu>
   <div class="menu-container">
+    <button class="menu-btn menu-btn--close" type="button" data-menu-close>
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#mobile-menu-close"></use>
+      </svg>
+    </button>
 <ul class="mobile-list list">
   <li class="mobile-list__item"><a href="" class="mobile-list__link mobile-list__link--top link">Студія</a></li>
   <li class="mobile-list__item"><a href="" class="mobile-list__link mobile-list__link--top link">Портфоліо</a></li>
@@ -522,6 +527,9 @@
   </div>
 </div>
 
+
+
 <script src="./js/modal.js"></script> 
+<script src="./js/mobile-menu.js"></script>
   </body>
 </html>

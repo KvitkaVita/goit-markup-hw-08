@@ -13,7 +13,7 @@
     margin-right: auto;
   }
  
-  &--contacts {
+  &__contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -26,6 +26,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+    line-height: calc(14 / 12);
+    padding-top: 21px;
+    }
   }
   
   &--contacts:hover,
@@ -33,7 +39,7 @@
     color: var(--accent-color);
   }
   
-  &--icon {
+  &__icon {
     fill: currentColor;
     margin-right: 10px;
   }
@@ -42,5 +48,13 @@
 .header-container-hidden {
   @media screen and (max-width: 767px) {
     display: none; 
+  }
+}
+
+.header-contacts-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
