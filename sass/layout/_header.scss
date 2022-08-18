@@ -20,8 +20,8 @@
     letter-spacing: 0.02em;
     color: var(--grey-txt-color);
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
   
     transition-property: color;
     transition-duration: 250ms;
@@ -30,7 +30,7 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       font-size: 12px;
     line-height: calc(14 / 12);
-    padding-top: 21px;
+    // padding-top: 21px;
     }
   }
   
@@ -53,10 +53,7 @@
 
 .header-contacts-tablet {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: baseline;
-    gap: 10px;
-    padding-bottom: 0px;
   }
 }

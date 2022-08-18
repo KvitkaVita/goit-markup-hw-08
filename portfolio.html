@@ -29,22 +29,28 @@
               <a class="site-nav site-nav__link" href="./index.html">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav site-nav__link сгккуте" href="./portfolio.html">Портфоліо</a>
+              <a class="site-nav site-nav__link current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="site-nav__item"><a class="site-nav site-nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list header-container">
+        <button class="menu-btn" type="button" data-menu-open>
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#mobile-menu"></use>
+          </svg>
+        </button>
+
+        <ul class="list header-container header-contacts-tablet header-container-hidden">
           <li>
-            <a class="header-container--contacts" href="mailto:info@devstudio.com"
-              ><svg class="header-container--icon" width="16" height="12">
+            <a class="header-container__contacts" href="mailto:info@devstudio.com"
+              ><svg class="header-container__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="header-container--contacts" href="tel:+380961111111">
+            <a class="header-container__contacts" href="tel:+380961111111">
               <svg class="header-container--icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -57,7 +63,7 @@
 
     <main>
       <!-- Фільтр на сторінці Портфоліо -->
-      <!-- <section class="filters section">
+      <section class="filters section">
         <div class="container">
           <ul class="list filters__container">
             <li><button class="filters__button" type="button">Усі</button></li>
@@ -65,24 +71,23 @@
             <li><button class="filters__button" type="button">Додатки</button></li>
             <li><button class="filters__button" type="button">Дизайн</button></li>
             <li><button class="filters__button" type="button">Маркетинг</button></li>
-          </ul> -->
+          </ul>
           <!-- Продукти компанії -->
           <ul class="list products-container">
             <li class="products">
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
-
-                  <img srcset="
-                  ./images/products-images/img1@1x_sm.jpg 450w,
-                  ./images/products-images/img1@2x_sm.jpg 900w, 
-                  ./images/products-images/img1@1x_md.jpg 354w, 
-                  ./images/products-images/img1@2x_md.jpg 708w,
-                  ./images/products-images/img1@1x_lg.jpg 370w,
-                  ./images/products-images/img1@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img1@1x_sm.jpg" 
-
+                  <img
+                    srcset="
+                      ./images/products-images/img1@1x_sm.jpg 450w,
+                      ./images/products-images/img1@2x_sm.jpg 900w,
+                      ./images/products-images/img1@1x_md.jpg 354w,
+                      ./images/products-images/img1@2x_md.jpg 708w,
+                      ./images/products-images/img1@1x_lg.jpg 370w,
+                      ./images/products-images/img1@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img1@1x_sm.jpg"
                     alt="Сайт компании"
                     width=""
                     height=""
@@ -105,16 +110,16 @@
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
                   <img
-                  srcset="
-                  ./images/products-images/img2@1x_sm.jpg 450w,
-                  ./images/products-images/img2@2x_sm.jpg 900w, 
-                  ./images/products-images/img2@1x_md.jpg 354w, 
-                  ./images/products-images/img2@2x_md.jpg 708w,
-                  ./images/products-images/img2@1x_lg.jpg 370w,
-                  ./images/products-images/img2@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img2@1x_sm.jpg" 
+                    srcset="
+                      ./images/products-images/img2@1x_sm.jpg 450w,
+                      ./images/products-images/img2@2x_sm.jpg 900w,
+                      ./images/products-images/img2@1x_md.jpg 354w,
+                      ./images/products-images/img2@2x_md.jpg 708w,
+                      ./images/products-images/img2@1x_lg.jpg 370w,
+                      ./images/products-images/img2@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img2@1x_sm.jpg"
                     alt="Грають в баскетбол"
                     width=""
                     height=""
@@ -137,16 +142,16 @@
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
                   <img
-                  srcset="
-                  ./images/products-images/img3@1x_sm.jpg 450w,
-                  ./images/products-images/img3@2x_sm.jpg 900w, 
-                  ./images/products-images/img3@1x_md.jpg 354w, 
-                  ./images/products-images/img3@2x_md.jpg 708w,
-                  ./images/products-images/img3@1x_lg.jpg 370w,
-                  ./images/products-images/img3@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img3@1x_sm.jpg" 
+                    srcset="
+                      ./images/products-images/img3@1x_sm.jpg 450w,
+                      ./images/products-images/img3@2x_sm.jpg 900w,
+                      ./images/products-images/img3@1x_md.jpg 354w,
+                      ./images/products-images/img3@2x_md.jpg 708w,
+                      ./images/products-images/img3@1x_lg.jpg 370w,
+                      ./images/products-images/img3@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img3@1x_sm.jpg"
                     alt="Морська їжа"
                     width=""
                     height=""
@@ -168,21 +173,21 @@
             <li class="products">
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
-                  <img 
-                  srcset="
-                  ./images/products-images/img4@1x_sm.jpg 450w,
-                  ./images/products-images/img4@2x_sm.jpg 900w, 
-                  ./images/products-images/img4@1x_md.jpg 354w, 
-                  ./images/products-images/img4@2x_md.jpg 708w,
-                  ./images/products-images/img4@1x_lg.jpg 370w,
-                  ./images/products-images/img4@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img4@1x_sm.jpg" 
-                  
-            
-                  
-                  alt="Навушники" width="" height="" />
+                  <img
+                    srcset="
+                      ./images/products-images/img4@1x_sm.jpg 450w,
+                      ./images/products-images/img4@2x_sm.jpg 900w,
+                      ./images/products-images/img4@1x_md.jpg 354w,
+                      ./images/products-images/img4@2x_md.jpg 708w,
+                      ./images/products-images/img4@1x_lg.jpg 370w,
+                      ./images/products-images/img4@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img4@1x_sm.jpg"
+                    alt="Навушники"
+                    width=""
+                    height=""
+                  />
                   <div class="products__overlay">
                     <p class="products__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -201,17 +206,16 @@
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
                   <img
-                  srcset="
-                  ./images/products-images/img5@1x_sm.jpg 450w,
-                  ./images/products-images/img5@2x_sm.jpg 900w, 
-                  ./images/products-images/img5@1x_md.jpg 354w, 
-                  ./images/products-images/img5@2x_md.jpg 708w,
-                  ./images/products-images/img5@1x_lg.jpg 370w,
-                  ./images/products-images/img5@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img5@1x_sm.jpg" 
-
+                    srcset="
+                      ./images/products-images/img5@1x_sm.jpg 450w,
+                      ./images/products-images/img5@2x_sm.jpg 900w,
+                      ./images/products-images/img5@1x_md.jpg 354w,
+                      ./images/products-images/img5@2x_md.jpg 708w,
+                      ./images/products-images/img5@1x_lg.jpg 370w,
+                      ./images/products-images/img5@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img5@1x_sm.jpg"
                     alt="Дві коробки"
                     width=""
                     height=""
@@ -233,20 +237,21 @@
             <li class="products">
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
-                  <img 
-                  srcset="
-                  ./images/products-images/img6@1x_sm.jpg 450w,
-                  ./images/products-images/img6@2x_sm.jpg 900w, 
-                  ./images/products-images/img6@1x_md.jpg 354w, 
-                  ./images/products-images/img6@2x_md.jpg 708w,
-                  ./images/products-images/img6@1x_lg.jpg 370w,
-                  ./images/products-images/img6@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img6@1x_sm.jpg" 
-                  alt="Веб-сайт" 
-                  width="" 
-                  height="" />
+                  <img
+                    srcset="
+                      ./images/products-images/img6@1x_sm.jpg 450w,
+                      ./images/products-images/img6@2x_sm.jpg 900w,
+                      ./images/products-images/img6@1x_md.jpg 354w,
+                      ./images/products-images/img6@2x_md.jpg 708w,
+                      ./images/products-images/img6@1x_lg.jpg 370w,
+                      ./images/products-images/img6@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img6@1x_sm.jpg"
+                    alt="Веб-сайт"
+                    width=""
+                    height=""
+                  />
                   <div class="products__overlay">
                     <p class="products__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -264,18 +269,21 @@
             <li class="products">
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
-                  <img 
-                  srcset="
-                  ./images/products-images/img7@1x_sm.jpg 450w,
-                  ./images/products-images/img7@2x_sm.jpg 900w, 
-                  ./images/products-images/img7@1x_md.jpg 354w, 
-                  ./images/products-images/img7@2x_md.jpg 708w,
-                  ./images/products-images/img7@1x_lg.jpg 370w,
-                  ./images/products-images/img7@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img7@1x_sm.jpg" 
-                  alt="Книга" width="370" height="295" />
+                  <img
+                    srcset="
+                      ./images/products-images/img7@1x_sm.jpg 450w,
+                      ./images/products-images/img7@2x_sm.jpg 900w,
+                      ./images/products-images/img7@1x_md.jpg 354w,
+                      ./images/products-images/img7@2x_md.jpg 708w,
+                      ./images/products-images/img7@1x_lg.jpg 370w,
+                      ./images/products-images/img7@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img7@1x_sm.jpg"
+                    alt="Книга"
+                    width="370"
+                    height="295"
+                  />
                   <div class="products__overlay">
                     <p class="products__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -293,19 +301,21 @@
             <li class="products">
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
-                  <img 
-                  srcset="
-                  ./images/products-images/img8@1x_sm.jpg 450w,
-                  ./images/products-images/img8@2x_sm.jpg 900w, 
-                  ./images/products-images/img8@1x_md.jpg 354w, 
-                  ./images/products-images/img8@2x_md.jpg 708w,
-                  ./images/products-images/img8@1x_lg.jpg 370w,
-                  ./images/products-images/img8@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img8@1x_sm.jpg" 
-                  
-                  alt="Лейбл" width="" height="" />
+                  <img
+                    srcset="
+                      ./images/products-images/img8@1x_sm.jpg 450w,
+                      ./images/products-images/img8@2x_sm.jpg 900w,
+                      ./images/products-images/img8@1x_md.jpg 354w,
+                      ./images/products-images/img8@2x_md.jpg 708w,
+                      ./images/products-images/img8@1x_lg.jpg 370w,
+                      ./images/products-images/img8@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img8@1x_sm.jpg"
+                    alt="Лейбл"
+                    width=""
+                    height=""
+                  />
                   <div class="products__overlay">
                     <p class="products__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -324,16 +334,16 @@
               <a class="link products__card" href="" target="-blank" rel="noopener noreferrer">
                 <div class="products__thumb">
                   <img
-                  srcset="
-                  ./images/products-images/img9@1x_sm.jpg 450w,
-                  ./images/products-images/img9@2x_sm.jpg 900w, 
-                  ./images/products-images/img9@1x_md.jpg 354w, 
-                  ./images/products-images/img9@2x_md.jpg 708w,
-                  ./images/products-images/img9@1x_lg.jpg 370w,
-                  ./images/products-images/img9@2x_lg.jpg 740w
-                  " 
-                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                  src="./images/products-images/img9@1x_sm.jpg"                                 
+                    srcset="
+                      ./images/products-images/img9@1x_sm.jpg 450w,
+                      ./images/products-images/img9@2x_sm.jpg 900w,
+                      ./images/products-images/img9@1x_md.jpg 354w,
+                      ./images/products-images/img9@2x_md.jpg 708w,
+                      ./images/products-images/img9@1x_lg.jpg 370w,
+                      ./images/products-images/img9@2x_lg.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                    src="./images/products-images/img9@1x_sm.jpg"
                     alt="Друк на клавіатурі"
                     width=""
                     height=""
@@ -358,25 +368,27 @@
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="bottom">
+    <footer class="bottom">
       <div class="container bottom-container">
-        <div>
+        <div class="bottom-container__logo">
           <a class="bottom-logo" href="" lang="en"
-            >Web<span class="bottom-logo--accent">Studio</span></a
-          >
-          <address class="contact-info">
-            <p class="contact-info__place">м.Київ пр-т Лесі Українки, 26</p>
-            <ul class="list bottom-contacts">
-              <li>
-                <a class="bottom-contacts__item" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="bottom-contacts__item" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
+            >Web<span class="bottom-logo--accent">Studio</span>
+          </a>
+          <div class="contacts-information">
+            <address class="contact-info">
+              <p class="contact-info__place">м.Київ пр-т Лесі Українки, 26</p>
+              <ul class="list bottom-contacts">
+                <li>
+                  <a class="bottom-contacts__item" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="bottom-contacts__item" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
         <div class="bottom-invitation">
           <p class="bottom-invitation__text">Приєднуйтеся</p>
@@ -456,8 +468,36 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
+    <!-- Mobile Menu -->
+<div class="menu-overlay is-open" data-menu>
+  <div class="menu-container">
+    <button class="menu-btn menu-btn--close" type="button" data-menu-close>
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#mobile-menu-close"></use>
+      </svg>
+    </button>
+<ul class="mobile-list list">
+  <li class="mobile-list__item"><a href="./index.html" class="mobile-list__link mobile-list__link--top link">Студія</a></li>
+  <li class="mobile-list__item"><a href="./portfolio.html" class="mobile-list__link mobile-list__link--top link">Портфоліо</a></li>
+  <li class="mobile-list__item"><a href="" class="mobile-list__link mobile-list__link--top link">Контакти</a></li>
+</ul>
+
+<ul class="mobile-list list">
+  <li class="mobile-list__item"><a href="" class="mobile-list__link mobile-list__link--accent link">+38 096 111 11 11</a></li>
+  <li class="mobile-list__item"><a href="" class="mobile-list__link mobile-list__link--grey link">info@devstudio.com</a></li>
+</ul>
+
+<ul class="mobile-socials list">
+  <li class="mobile-socials__item"><a href="" class="mobile-socials__link link">Instagram</a></li>
+  <li class="mobile-socials__item"><a href="" class="mobile-socials__link link">Twitter</a></li>
+  <li class="mobile-socials__item"><a href="" class="mobile-socials__link link">Facebook</a></li>
+  <li class="mobile-socials__item"><a href="" class="mobile-socials__link link">Linkedin</a></li>
+</ul>
+
+  </div>
+</div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

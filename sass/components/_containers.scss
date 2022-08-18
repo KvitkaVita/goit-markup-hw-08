@@ -17,12 +17,21 @@
   }
 }
 
-
   .filters__container {
     display: flex;
-    justify-content: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    justify-content: left;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: center;
+    }
   }
 
   

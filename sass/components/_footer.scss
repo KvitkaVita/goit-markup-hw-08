@@ -3,19 +3,29 @@
   color: var(--white-txt-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .bottom-container {
   display: block;
   align-items: baseline;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+flex-direction: row;
   }
+}
+
+.bottom-container__logo {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: flex-start;
+  } 
 }
 
 .contacts-information {
@@ -77,9 +87,10 @@
 
 .bottom-invitation {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  
+
+  
+
   }
 
   @media screen and (min-width: 1200px) {
@@ -179,3 +190,4 @@
     justify-content: baseline;
   }
 }
+
