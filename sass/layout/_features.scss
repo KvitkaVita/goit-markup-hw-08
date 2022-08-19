@@ -12,25 +12,24 @@
     }
   }
 
-  &__container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  // &__container {
+  //   width: 100%;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  // }
 
   &__items {
     width: 100%;
 
     @media screen and (min-width: 768px) {
-      width: 46%;
+      max-width: 354px; 
     }
     
     @media screen and (min-width: 1200px) {
       max-width: 270px;
     }
-
   }
 
   &__item {
@@ -60,10 +59,12 @@
 
   &__icon {
     display: flex;
+    height: 120px;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     background-color: #f5f4fa;
     border-radius: 4px;
+
   }
 }

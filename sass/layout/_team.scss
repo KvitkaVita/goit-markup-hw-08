@@ -2,14 +2,15 @@
     background-color: #f5f4fa;
   }
 
-
-
 .team {
-    display: block;
+    display: flex;
     gap: 30px;
-  
+  flex-direction: column;
+  align-items: center;
+
     @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     }
     
@@ -47,4 +48,8 @@
     margin-bottom: 16px;
   }
 }
+
+// .team__card:not(:last-child) {
+//   margin-bottom: 30px;
+// }
   

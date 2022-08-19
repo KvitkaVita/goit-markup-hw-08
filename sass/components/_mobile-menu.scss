@@ -1,4 +1,7 @@
 .menu-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -62,6 +65,7 @@
 }
 
 .menu-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 480px;

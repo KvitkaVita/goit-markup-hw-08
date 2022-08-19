@@ -230,6 +230,7 @@ img {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -368,6 +369,9 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .bottom-container {
@@ -394,11 +398,12 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+.bottom-container__logo {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
   .bottom-container__logo {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    margin-bottom: 0px;
   }
 }
 
@@ -469,12 +474,27 @@ img {
   color: var(--accent-color);
 }
 
+.bottom-invitation {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bottom-invitation {
+    margin-left: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .bottom-invitation {
     margin-left: 70px;
+    margin-bottom: 0px;
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
             justify-content: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom-invit {
+    margin-left: auto;
   }
 }
 
@@ -485,15 +505,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-txt-color);
-  margin-top: 60px;
   margin-bottom: 20px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .bottom-invitation__text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     text-align: center;
     margin-top: 0px;
   }
@@ -540,7 +556,7 @@ img {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 450px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -564,7 +580,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 358px;
+    width: 358px;
     margin-bottom: 0px;
   }
 }
@@ -816,6 +832,9 @@ textarea::placeholder {
 }
 
 .menu-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -885,6 +904,7 @@ textarea::placeholder {
 }
 
 .menu-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -996,6 +1016,12 @@ textarea::placeholder {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .header-container__nav {
   margin-right: auto;
 }
@@ -1015,6 +1041,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-container__contacts {
+    margin-right: auto;
     font-size: 12px;
     line-height: 1.1666666667;
   }
@@ -1163,19 +1190,12 @@ textarea::placeholder {
     display: flex;
   }
 }
-.features__container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .features__items {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .features__items {
-    width: 46%;
+    max-width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1212,6 +1232,7 @@ textarea::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 120px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1273,14 +1294,27 @@ textarea::placeholder {
 }
 
 .team {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
