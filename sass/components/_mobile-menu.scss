@@ -13,11 +13,11 @@
   fill: black;
 
   @media screen and (min-width: 768px) {
-    display: none; 
+    display: none;
   }
 
   @media screen and (min-width: 1200px) {
-    display: none; 
+    display: none;
   }
 
   transition-property: fill;
@@ -45,40 +45,33 @@
   height: 100%;
   z-index: 100;
   background-color: transparent;
-
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
-    display: none; 
+    display: none;
   }
-
   &.is-open {
-  opacity: 1;
-  pointer-events: initial;
-  visibility: visible;
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
   }
 }
-
 .menu-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 480px;
+  width: 100%;
   height: 100%;
-  
   background-color: var(--main-bgc);
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   .menu-overlay.is-open & {
     transform: translateX(0);
   }
@@ -110,15 +103,14 @@
 .mobile-socials {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 10px;
   margin-top: 64px;
-
   &__link {
     font-weight: 500;
     font-size: 18px;
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;
-
     color: var(--accent-txt-color);
   }
 }
