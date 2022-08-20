@@ -1532,14 +1532,26 @@ textarea::placeholder {
   fill: var(--accent-icon-color);
 }
 
-.filters-container {
+.filters__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  max-width: 326px;
+}
+@media screen and (min-width: 768px) {
+  .filters__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
 }
 
 .filters__button {
