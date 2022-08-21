@@ -235,7 +235,7 @@ img {
 }
 
 .overlay {
-  max-width: 1600px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   background-repeat: no-repeat;
@@ -1083,15 +1083,16 @@ textarea::placeholder {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-@media screen and (min-width: 1200px) {
-  .hero-heading {
-    width: 696px;
-  }
-}
-.hero-heading--title {
+
+.hero-heading__title {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero-heading__title {
+    max-width: 696px;
+  }
 }
 
 .heading-two {
