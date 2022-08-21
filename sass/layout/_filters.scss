@@ -3,12 +3,17 @@
   flex-wrap: wrap;
   row-gap: 15px;
   column-gap: 8px;
-  max-width: 326px;
+  // max-width: 326px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     max-width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
