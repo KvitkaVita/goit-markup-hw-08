@@ -10,22 +10,21 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
-    line-height: calc(60 / 44);
+    line-height: 1.4;
   }
 }
 
 .hero-heading {
   padding-top: 200px;
   padding-bottom: 200px;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+  }
 
   &--title {
     max-width: 360px;
     margin-left: auto;
-    margin-right: auto;
-
-    @media screen and (min-width: 1200px) {
-      max-width: 696px;
-    }
+    margin-right: auto; 
   }
 }
 

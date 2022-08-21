@@ -961,12 +961,6 @@ textarea::placeholder {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-container {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 .header-container__nav {
   margin-right: auto;
 }
@@ -1081,7 +1075,7 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .heading {
     font-size: 44px;
-    line-height: 1.3636363636;
+    line-height: 1.4;
   }
 }
 
@@ -1089,15 +1083,15 @@ textarea::placeholder {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+@media screen and (min-width: 1200px) {
+  .hero-heading {
+    width: 696px;
+  }
+}
 .hero-heading--title {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (min-width: 1200px) {
-  .hero-heading--title {
-    max-width: 696px;
-  }
 }
 
 .heading-two {
